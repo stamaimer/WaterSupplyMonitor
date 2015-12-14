@@ -13,3 +13,8 @@ def AddInformURL():
 
     WaterSupplyMonitor.AddInfomURL(url)
 
+
+if __name__ == "__main__":
+
+    app.run(host="104.236.129.194", port=80, debug=True)
+
