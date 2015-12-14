@@ -48,7 +48,9 @@ def QueryWaterCutInfo():
 
         payload = {"text": "停水通知", "desp": message}
 
-        requests.post(INFORM_URL[0], data=payload)
+        for url in INFORM_URL:
+
+            requests.post(url, data=payload)
 
 
 @celery.task
@@ -56,4 +58,4 @@ def AddInfomURL(url):
 
     INFORM_URL.append(url)
 
-    # 持久化到文件还是DB
+    # 持久化到文件还是DataBase
