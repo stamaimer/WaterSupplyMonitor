@@ -18,7 +18,7 @@ SOURCE_URL = "http://www.whwater.com/gsfw/tstz/"
 
 INFORM_URL = ["http://sc.ftqq.com/SCU436T08f5357b0dafad0249283e67c3b4e71f55f677ffe2b28.send"]
 
-keywords = ["珞狮", "珞瑜", "广八路", "八一路"]
+keywords = ["东湖", "珞狮", "珞瑜", "广八路", "八一路", "卓刀泉", "水果湖"]
 
 
 @celery.task
@@ -49,6 +49,8 @@ def QueryWaterCutInfo():
                 if keyword in msg:
 
                     message.append(msg)
+
+                    break
 
         message = "\n\n".join(message)
 
