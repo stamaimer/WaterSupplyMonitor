@@ -2,6 +2,7 @@
 
 __author__ = 'stamaimer'
 
+import os
 import re
 import requests
 
@@ -20,6 +21,15 @@ INFORM_URL = ["http://sc.ftqq.com/SCU436T08f5357b0dafad0249283e67c3b4e71f55f677f
 
 keywords = ["东湖", "珞狮", "珞瑜", "广八路", "八一路", "卓刀泉", "水果湖"]
 
+inform_urls = open("inform_urls.txt", "r")
+
+INFORM_URL.extend(inform_urls.read().split(os.linesep))
+
+for url in INFORM_URL:
+
+    print url
+
+inform_urls.close()
 
 @celery.task
 def QueryWaterCutInfo():
@@ -67,5 +77,11 @@ def AddInfomURL(url):
     print url
 
     INFORM_URL.append(url)
+
+    inform_urls = open("inform_urls.txt", 'a')
+
+    inform_urls.write(url + os.linesep)
+
+    inform_urls.close()
 
     # 持久化到文件还是DataBase
