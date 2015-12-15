@@ -64,6 +64,8 @@ def QueryWaterCutInfo():
 @celery.task
 def AddInfomURL(url):
 
+    print url
+
     INFORM_URL.append(url)
 
     # 持久化到文件还是DataBase
