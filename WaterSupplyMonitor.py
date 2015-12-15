@@ -62,6 +62,10 @@ def QueryWaterCutInfo():
 
                     break
 
+        if message == []:
+
+            return
+
         message = "\n\n".join(message)
 
         payload = {"text": "停水通知", "desp": message}
