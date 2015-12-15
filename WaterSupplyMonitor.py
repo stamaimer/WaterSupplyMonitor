@@ -21,6 +21,8 @@ INFORM_URL = ["http://sc.ftqq.com/SCU436T08f5357b0dafad0249283e67c3b4e71f55f677f
 
 keywords = ["东湖", "珞狮", "珞瑜", "广八路", "八一路", "卓刀泉", "水果湖"]
 
+last_message = ""
+
 inform_urls = open("inform_urls.txt", "r")
 
 INFORM_URL.extend(inform_urls.read().split(os.linesep)[:-1])
@@ -67,6 +69,12 @@ def QueryWaterCutInfo():
             return
 
         message = "\n\n".join(message)
+
+        if message == last_message:
+
+            return
+
+        last_message = message
 
         payload = {"text": "停水通知", "desp": message}
 
