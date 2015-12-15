@@ -70,6 +70,8 @@ def QueryWaterCutInfo():
 
         message = "\n\n".join(message)
 
+        global last_message
+
         if message == last_message:
 
             return
