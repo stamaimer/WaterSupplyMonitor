@@ -20,7 +20,7 @@ def AddInformURL():
 
     url = request.form["url"]
 
-    WaterSupplyMonitor.AddInfomURL(url)
+    WaterSupplyMonitor.AddInfomURL.delay(url)
 
     return jsonify({"status": 0, "message": "success"}), 200
 
