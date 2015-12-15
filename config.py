@@ -5,7 +5,7 @@ CELERYBEAT_SCHEDULE = \
     'query-every-hour':
     {
         'task': 'WaterSupplyMonitor.QueryWaterCutInfo',
-        'schedule': timedelta(seconds=30),
+        'schedule': timedelta(seconds=3600),
         'args': ()
     },
 }
