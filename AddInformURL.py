@@ -21,6 +21,8 @@ def AddInformURL():
 
     WaterSupplyMonitor.AddInfomURL(url)
 
+    return 200
+
 
 if __name__ == "__main__":
 
