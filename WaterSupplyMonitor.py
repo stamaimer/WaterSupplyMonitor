@@ -74,7 +74,9 @@ def QueryWaterCutInfo():
 
             print url
 
-            requests.post(url, data=payload)
+            response = requests.post(url, data=payload)
+
+            print response.status_code
 
 
 @celery.task
