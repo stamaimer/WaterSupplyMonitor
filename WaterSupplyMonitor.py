@@ -23,7 +23,7 @@ keywords = ["东湖", "珞狮", "珞瑜", "广八路", "八一路", "卓刀泉",
 
 inform_urls = open("inform_urls.txt", "r")
 
-INFORM_URL.extend(inform_urls.read().split(os.linesep))
+INFORM_URL.extend(inform_urls.read().split(os.linesep)[:-1])
 
 for url in INFORM_URL:
 
@@ -69,8 +69,6 @@ def QueryWaterCutInfo():
         message = "\n\n".join(message)
 
         payload = {"text": "停水通知", "desp": message}
-
-        print len(INFORM_URL)
 
         for url in INFORM_URL:
 
