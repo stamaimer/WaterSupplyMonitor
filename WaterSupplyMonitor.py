@@ -70,6 +70,8 @@ def QueryWaterCutInfo():
 
         payload = {"text": "停水通知", "desp": message}
 
+        print len(INFORM_URL)
+
         for url in INFORM_URL:
 
             print url
