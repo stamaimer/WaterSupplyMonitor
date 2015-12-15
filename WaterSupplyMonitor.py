@@ -72,6 +72,8 @@ def QueryWaterCutInfo():
 
         for url in INFORM_URL:
 
+            print url
+
             requests.post(url, data=payload)
 
 
