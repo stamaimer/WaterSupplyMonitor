@@ -1,6 +1,7 @@
 __author__ = 'stamaimer'
 
 from flask import Flask
+from flask import jsonify
 from flask import request
 from flask import render_template
 
@@ -21,7 +22,7 @@ def AddInformURL():
 
     WaterSupplyMonitor.AddInfomURL(url)
 
-    return 200
+    return jsonify({"status": 0, "message": "success"}), 200
 
 
 if __name__ == "__main__":

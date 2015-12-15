@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d5d1d69-0d3e-484b-b6aa-cb646acd2181" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/addinformurl.html" afterPath="$PROJECT_DIR$/templates/addinformurl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AddInformURL.py" afterPath="$PROJECT_DIR$/AddInformURL.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WaterSupplyMonitor.iws" />
@@ -48,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddInformURL.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AddInformURL.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AddInformURL.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="49" max-vertical-offset="540">
-              <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.5770065" vertical-offset="94" max-vertical-offset="555">
+              <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
               <folding>
                 <element signature="e#26#49#0" expanded="true" />
               </folding>
@@ -60,10 +60,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addinformurl.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="addinformurl.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/addinformurl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27459955" vertical-offset="0" max-vertical-offset="437">
+            <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="270">
               <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
               <folding />
             </state>
@@ -80,8 +80,8 @@
       <list>
         <option value="$PROJECT_DIR$/addinformurl.html" />
         <option value="$PROJECT_DIR$/WaterSupplyMonitor.py" />
-        <option value="$PROJECT_DIR$/AddInformURL.py" />
         <option value="$PROJECT_DIR$/templates/addinformurl.html" />
+        <option value="$PROJECT_DIR$/AddInformURL.py" />
       </list>
     </option>
   </component>
@@ -156,7 +156,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TCPServer/yhx" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hackathon-intro" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
@@ -568,21 +568,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AddInformURL.py">
+    <entry file="file://$PROJECT_DIR$/templates/addinformurl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="49" max-vertical-offset="540">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-          <folding>
-            <element signature="e#26#49#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="270">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/addinformurl.html">
+    <entry file="file://$PROJECT_DIR$/AddInformURL.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27459955" vertical-offset="0" max-vertical-offset="437">
-          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-          <folding />
+        <state vertical-scroll-proportion="0.5770065" vertical-offset="94" max-vertical-offset="555">
+          <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+          <folding>
+            <element signature="e#26#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
