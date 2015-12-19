@@ -153,19 +153,48 @@
 					// Process form.
 					// Note: Doesn't actually do anything yet (other than report back with a "thank you"),
 					// but there's enough here to piece together a working AJAX submission call that does.
-						window.setTimeout(function() {
 
-							// Reset form.
-								$form.reset();
+					//	window.setTimeout(function() {
+                    //
+					//		// Reset form.
+					//			$form.reset();
+                    //
+					//		// Enable submit.
+					//			$submit.disabled = false;
+                    //
+					//		// Show message.
+					//			$message._show('success', 'Thank you!');
+					//			//$message._show('failure', 'Something went wrong. Please try again.');
+                    //
+					//	}, 750);
 
-							// Enable submit.
-								$submit.disabled = false;
+					if (window.XMLHttpRequest)
+					{// code for IE7+, Firefox, Chrome, Opera, Safari
+						xhr = new XMLHttpRequest();
+					}
+					else
+					{// code for IE6, IE5
+						xhr = new ActiveXObject("Microsoft.XMLHTTP");
+					}
 
-							// Show message.
-								$message._show('success', 'Thank you!');
-								//$message._show('failure', 'Something went wrong. Please try again.');
+					xhr.open("POST", "/addinformurl", false);
 
-						}, 750);
+					xhr.send();
+
+					if(200 === xhr.status)
+					{
+						msg = JSON.parse(xhr.responseText).msg;
+
+						console.log(msg);
+
+						$message._show('success', 'Thank you!');
+					}
+					else
+					{
+						console.log(xhr.status);
+
+						$message._show('failure', 'Something went wrong. Please try again.');
+					}
 
 				});
 
