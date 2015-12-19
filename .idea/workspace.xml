@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d5d1d69-0d3e-484b-b6aa-cb646acd2181" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/assets/js/main.js" afterPath="$PROJECT_DIR$/static/assets/js/main.js" />
-    </list>
+    <list default="true" id="1d5d1d69-0d3e-484b-b6aa-cb646acd2181" name="Default" comment="" />
     <ignored path="WaterSupplyMonitor.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
