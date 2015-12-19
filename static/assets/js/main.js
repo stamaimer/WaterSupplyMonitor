@@ -167,7 +167,13 @@
 					//			//$message._show('failure', 'Something went wrong. Please try again.');
                     //
 					//	}, 750);
+
+					var data = new FormData(document.querySelector("form"))
+
 					var xhr = null;
+
+					var msg = null;
+
 					if (window.XMLHttpRequest)
 					{// code for IE7+, Firefox, Chrome, Opera, Safari
 						xhr = new XMLHttpRequest();
@@ -179,7 +185,7 @@
 
 					xhr.open("POST", "/addinformurl", false);
 
-					xhr.send();
+					xhr.send(data);
 
 					if(200 === xhr.status)
 					{
