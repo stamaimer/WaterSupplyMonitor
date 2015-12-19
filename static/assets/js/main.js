@@ -167,7 +167,7 @@
 					//			//$message._show('failure', 'Something went wrong. Please try again.');
                     //
 					//	}, 750);
-
+					var xhr = null;
 					if (window.XMLHttpRequest)
 					{// code for IE7+, Firefox, Chrome, Opera, Safari
 						xhr = new XMLHttpRequest();
